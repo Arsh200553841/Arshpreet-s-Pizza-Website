@@ -1,0 +1,135 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Gentium+Plus&family=Indie+Flower&family=Montserrat:wght@100;400;500;700&family=Tiro+Gurmukhi&display=swap');
+/* Styling for the body */
+body{
+    /* Creating a gradient background */
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    /* Adding a backdrop filter to create a blurred effect */
+    backdrop-filter: blur(8px);
+}
+
+/* Styling for the order section */
+.order{
+    height: 100vh;
+    border: 3px;
+
+}
+
+/* Styling for the order form */
+.order-form{
+    height:100%;
+    width:600px;
+    margin: auto;
+    
+}
+
+/* Styling for the heading in the order form */
+.order-form h1{
+    font-family: "Dancing Script";
+    font-weight: bolder;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+/* Styling for text input fields */
+input[type=text] {
+    width: 300px;
+    border-color: rgba(111,111,111,0);
+    padding: 6px 6px;
+    margin: 3px 0 ;
+    border-radius: 50px;
+}
+
+input[type=email] {
+    width: 300px;
+    padding: 6px 6px ;
+    margin: 3px 0 ;
+    border-radius: 50px;
+    border-color: rgba(111,111,111,0);
+}
+
+
+/* Styling for the options in the dropdown */
+option{
+    background: #2C2C2B;
+    color: #ffffff;
+}
+
+/* Styling for the container elements */
+.container{
+    font-family: "Dancing Script", sans-serif;
+    font-weight: bolder;
+    margin-left: -200px;
+}
+
+/* Styling for the pizza size labels */
+.pizza-size{
+    font-family: "Dancing Script", sans-serif;
+    font-weight: bolder;
+}
+
+/* Styling for the time input and label */
+.time{
+    float: left;
+    margin-left: 130px;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling for the form elements */
+.form{
+    text-align: center;
+}
+
+/* Styling for the form headings */
+.form h3{
+    text-align: left;
+    margin-left: 130px;
+    font-family: Garamond, serif;
+    font-weight: lighter;
+}
+
+/* Styling for the select dropdowns */
+select{
+    width: 320px;
+    padding: 6px 6px;
+    margin: 8px;
+    border-radius: 50px;
+    border-color: rgba(111,111,111,0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* Styling for the submit button */
+input[type=submit]{
+    width: 100px;
+    padding: 12px 20px;
+    margin: 8px;
+    background-color: #2C2C2B;
+    color: #ffffff;
+    border-radius: 50px;
+    border-color: rgba(111,111,111,0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* Styling for the delivery options labels */
+.delivery-options{
+    
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width:1024px){
+        /* Adjusting the font size for smaller screens */
+            .order-form h1{
+                font-size: 40px;
+            }
+
+            .order-form h3{
+                font-size: 15px;
+            }
+}
