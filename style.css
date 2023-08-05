@@ -1,0 +1,262 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Gentium+Plus&family=Indie+Flower&family=Montserrat:wght@100;400;500;700&family=Tiro+Gurmukhi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap');
+
+
+/* Resetting default margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the Homepage section */
+.Homepage{
+
+    /* Background image and gradient */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-image.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Heading style for the Homepage section */
+.Homepage h1{
+
+    /* Centering the text vertically and horizontally */
+    display: flex;
+    font-family: "Dancing Script";
+    font-size: 100px;
+    height: 100vh;
+    padding-top: 30vh;
+    color: #fff;
+    justify-content: center;
+    padding-right: 1.5em;
+}
+
+/* Styling for the navigation menu */
+.nav{
+    display: flex;
+    justify-content: right;
+    padding-top: 2em;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 20px ;
+    font-family: "Montserrat, sans-serif";
+    font-size: 16px;
+}
+
+/* Styling for the logo */
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* Styling for the Menu section */
+.menu{
+    background-image: -webkit-repeating-radial-gradient(purple,white);
+    background-color: #FEF9F0;
+    height: 100vh;
+}
+
+/* Heading style for the Menu section */
+.menu h1{
+    color: #2C2C2B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Styling for the menu items */
+.menu-items li{
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-items h1{
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+.menu h2{
+    color: #2C2C2B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+.menu p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+/* Styling for the left column of menu items */
+.left{
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    float:left;
+    width: 40%;
+    text-align: center;
+    margin-left: 3px ;
+}
+
+/* Styling for the right column of menu items */
+.right{
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    float: right;
+    width: 40%;
+    text-align: center;
+    margin-right: 3px;
+}
+
+/* Styling for the About Us section */
+.Information{
+    background-image: -webkit-repeating-linear-gradient(purple,white);
+}
+
+/* Styling for the image in the About Us section */
+.image{
+    float: left;
+    width: 20%;
+    
+}
+.image > img{
+    border-radius: 10px;
+    margin-left: 30px ;
+    margin-top: 70px;
+    margin-bottom: 40px ;
+}
+
+/* Styling for the text in the About Us section */
+.letter{
+    float: right;
+    width: 40%;
+    text-align: center;
+    margin-right: 3px;
+}
+.letter > h3{
+    font-family: "Dancing Script";
+    font-size: 50px ;
+    padding-right:5px ;
+    transform: translate(-53%);
+    padding-top: 70px;
+}
+.letter > p{
+    font-family: "Dancing Script";
+    font-size: 20px;
+    padding-top: 30px;
+    transform: translate(-50%);
+    text-align: left;
+}
+
+/* Styling for the order button */
+button{
+    border-radius: 8px;
+    font-family: "Dancing Script";
+    font-weight: bolder;
+    background-image: linear-gradient(to bottom right, purple, rgb(224, 175, 239));
+    transform: translate(290%);
+    margin-top: 19em;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar-thumb:hover {
+    background: #2C2C2B;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2C2C2B;
+    border-radius: 10px;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width:1024px){
+    /* Adjustments for smaller screens */
+
+        /* Homepage section */
+        .Homepage h1{
+            width:auto;
+            font-size: 2.3em;
+            padding-right: 4em;
+        }
+
+        .logo img{
+            transform: translate(-20%) ;
+            
+        }
+
+        .left h1{
+            font-size: 15px ;
+            
+        }
+
+        .left h2{
+            font-size: 17px;
+        }
+        
+        .left p{
+            font-size: 8px;
+        }
+
+        /* Menu section - Right column */
+        .right h1{
+            font-size: 15px ;
+            
+        }
+
+        .right h2{
+            font-size: 17px;
+        }
+
+        .right p{
+            font-size: 8px;
+        }
+
+        /* About Us section */
+        .menu h1{
+            font-size: 14px;
+        }
+
+        .image img{
+            width: 140px;
+            height: 140px;
+            
+        }
+
+        .letter h3{
+            font-size: 15px;
+        }
+
+        .letter p{
+            font-size: 9px;
+        }
+        
+        /* Order button */
+        button{
+            transform: translate(120%);
+            font-size: 10px;
+        }
+
+
+}

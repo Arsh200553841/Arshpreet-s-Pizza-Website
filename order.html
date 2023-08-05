@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORDER PAGE</title>
+  <meta name="description" content="This is the poster for Pizza">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <!-- Order section -->
+    <section class="order" id="order">
+        <div class="order-form">
+          <h1>ORDER</h1>
+          <!-- Order form -->
+          <form class="form" action="order.html" method="post">
+            <h3>NAME:</h3>
+            <!-- Name input -->
+            <input type="text" name="name" placeholder="Name" required>
+            <h3>ADDRESS:</h3>
+            <!-- Address input -->
+            <input type="text" name="Address" placeholder="Address" required>
+            <h3>EMAIL:</h3>
+            <!-- Email input -->
+            <input type="email" name="email" placeholder="Your Email" required>
+            <br>
+            <!-- Number of pizzas selection -->
+            <h3>Select the number of pizza:</h3>
+            <select id="pizza-number" name="pizza-number">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <br>
+             <!-- Size of pizza selection -->
+            <h3>Select the size of pizza:</h3>
+            <label class="pizza-size">regular
+              <input type="radio" checked="checked" name="radio">
+            </label>
+            <label class="pizza-size">medium
+              <input type="radio" name="radio">
+            </label>
+            <label class="pizza-size">large
+              <input type="radio" name="radio">
+            </label>
+            <br>
+            <br>
+            <!-- Pizza type selection -->
+            <h3>Choose a pizza:</h3>
+            <select id="pizza" name="pizza">
+              <option value="MAMBO CAMBO">MAMBO CAMBO</option>
+              <option value="MEATEOR">MEATEOR</option>
+              <option value="TEXAS BBQ">TEXAS BBQ</option>
+              <option value="HOT STUFF">HOT STUFF</option>
+              <option value="MARGHERITA PIZZA">MARGHERITA PIZZA</option>
+              <option value="VEGETARIAN BITE">VEGETARIAN BITE</option>
+              <option value="MEXICAN DELIGHT">MEXICAN DELIGHT</option>
+              <option value="AMERICAN HEAT">AMERICAN HEAT</option>
+            </select>
+            
+            <!-- Toppings selection -->
+            <h3>Add toppings:</h3>
+            <label class="container">pickle
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">olives
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">mushroom
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">extra cheese
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">black olives
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">extra chicken
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">Jalapeno
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <!-- Preferred delivery time input -->
+            <label class="time">Preffered delivery time:
+              <input type="time" id="time" name="time" min="09:00" max="22:00" required>
+              <br>
+              Store open from 9am till 10pm
+            </label>
+            <br>
+            <br>
+            <br>
+            <!-- Delivery options selection -->
+            <h3>Delivery options:</h3>
+            <label class="delivery-options">knock the door
+              <input type="radio" checked="checked" name="radio">
+            </label>
+            <label class="delivery-options">leave at door
+              <input type="radio" name="radio">
+            </label>
+            <br>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+</body>
+</html>
